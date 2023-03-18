@@ -1,0 +1,2 @@
+Requirement already satisfied: plotly in c:\users\acer\anaconda3\lib\site-packages (5.9.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\acer\anaconda3\lib\site-packages (from plotly) (8.0.1)
