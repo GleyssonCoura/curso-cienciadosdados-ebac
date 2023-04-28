@@ -1,0 +1,1292 @@
+2023-04-28 19:39:21,869:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-28 19:39:21,869:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-28 19:39:21,869:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-28 19:39:21,869:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-28 19:39:22,370:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-04-28 19:55:43,780:INFO:PyCaret ClassificationExperiment
+2023-04-28 19:55:43,780:INFO:Logging name: clf-default-name
+2023-04-28 19:55:43,780:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-04-28 19:55:43,781:INFO:version 3.0.0
+2023-04-28 19:55:43,781:INFO:Initializing setup()
+2023-04-28 19:55:43,781:INFO:self.USI: 91d5
+2023-04-28 19:55:43,781:INFO:self._variable_keys: {'is_multiclass', 'idx', 'data', 'html_param', 'gpu_n_jobs_param', 'fold_groups_param', '_ml_usecase', 'fix_imbalance', 'n_jobs_param', 'X', 'y', 'logging_param', 'y_train', 'fold_shuffle_param', 'seed', 'exp_name_log', '_available_plots', 'y_test', 'X_test', 'memory', 'X_train', 'USI', 'fold_generator', 'pipeline', 'target_param', 'exp_id', 'log_plots_param', 'gpu_param'}
+2023-04-28 19:55:43,781:INFO:Checking environment
+2023-04-28 19:55:43,781:INFO:python_version: 3.9.13
+2023-04-28 19:55:43,781:INFO:python_build: ('main', 'Aug 25 2022 23:51:50')
+2023-04-28 19:55:43,781:INFO:machine: AMD64
+2023-04-28 19:55:43,781:INFO:platform: Windows-10-10.0.19044-SP0
+2023-04-28 19:55:43,781:INFO:Memory: svmem(total=8459489280, available=2910666752, percent=65.6, used=5548822528, free=2910666752)
+2023-04-28 19:55:43,781:INFO:Physical Core: 4
+2023-04-28 19:55:43,781:INFO:Logical Core: 8
+2023-04-28 19:55:43,781:INFO:Checking libraries
+2023-04-28 19:55:43,781:INFO:System:
+2023-04-28 19:55:43,781:INFO:    python: 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+2023-04-28 19:55:43,781:INFO:executable: C:\Users\Acer\anaconda3\python.exe
+2023-04-28 19:55:43,782:INFO:   machine: Windows-10-10.0.19044-SP0
+2023-04-28 19:55:43,782:INFO:PyCaret required dependencies:
+2023-04-28 19:55:43,782:INFO:                 pip: 22.2.2
+2023-04-28 19:55:43,782:INFO:          setuptools: 63.4.1
+2023-04-28 19:55:43,782:INFO:             pycaret: 3.0.0
+2023-04-28 19:55:43,782:INFO:             IPython: 7.31.1
+2023-04-28 19:55:43,782:INFO:          ipywidgets: 7.6.5
+2023-04-28 19:55:43,782:INFO:                tqdm: 4.64.1
+2023-04-28 19:55:43,782:INFO:               numpy: 1.21.5
+2023-04-28 19:55:43,782:INFO:              pandas: 1.4.4
+2023-04-28 19:55:43,782:INFO:              jinja2: 2.11.3
+2023-04-28 19:55:43,782:INFO:               scipy: 1.9.1
+2023-04-28 19:55:43,783:INFO:              joblib: 1.2.0
+2023-04-28 19:55:43,783:INFO:             sklearn: 1.0.2
+2023-04-28 19:55:43,783:INFO:                pyod: 1.0.9
+2023-04-28 19:55:43,783:INFO:            imblearn: 0.10.1
+2023-04-28 19:55:43,783:INFO:   category_encoders: 2.6.0
+2023-04-28 19:55:43,783:INFO:            lightgbm: 3.3.5
+2023-04-28 19:55:43,783:INFO:               numba: 0.55.1
+2023-04-28 19:55:43,783:INFO:            requests: 2.28.1
+2023-04-28 19:55:43,783:INFO:          matplotlib: 3.5.2
+2023-04-28 19:55:43,783:INFO:          scikitplot: 0.3.7
+2023-04-28 19:55:43,783:INFO:         yellowbrick: 1.5
+2023-04-28 19:55:43,783:INFO:              plotly: 5.9.0
+2023-04-28 19:55:43,783:INFO:             kaleido: 0.2.1
+2023-04-28 19:55:43,783:INFO:         statsmodels: 0.13.2
+2023-04-28 19:55:43,783:INFO:              sktime: 0.17.2
+2023-04-28 19:55:43,783:INFO:               tbats: 1.1.3
+2023-04-28 19:55:43,783:INFO:            pmdarima: 2.0.3
+2023-04-28 19:55:43,783:INFO:              psutil: 5.9.0
+2023-04-28 19:55:43,783:INFO:PyCaret optional dependencies:
+2023-04-28 19:55:43,804:INFO:                shap: Not installed
+2023-04-28 19:55:43,804:INFO:           interpret: Not installed
+2023-04-28 19:55:43,804:INFO:                umap: Not installed
+2023-04-28 19:55:43,804:INFO:    pandas_profiling: 4.1.0
+2023-04-28 19:55:43,804:INFO:  explainerdashboard: Not installed
+2023-04-28 19:55:43,805:INFO:             autoviz: Not installed
+2023-04-28 19:55:43,805:INFO:           fairlearn: Not installed
+2023-04-28 19:55:43,805:INFO:             xgboost: 1.7.4
+2023-04-28 19:55:43,805:INFO:            catboost: Not installed
+2023-04-28 19:55:43,805:INFO:              kmodes: Not installed
+2023-04-28 19:55:43,805:INFO:             mlxtend: Not installed
+2023-04-28 19:55:43,805:INFO:       statsforecast: Not installed
+2023-04-28 19:55:43,805:INFO:        tune_sklearn: Not installed
+2023-04-28 19:55:43,805:INFO:                 ray: Not installed
+2023-04-28 19:55:43,805:INFO:            hyperopt: Not installed
+2023-04-28 19:55:43,805:INFO:              optuna: Not installed
+2023-04-28 19:55:43,805:INFO:               skopt: Not installed
+2023-04-28 19:55:43,806:INFO:              mlflow: Not installed
+2023-04-28 19:55:43,806:INFO:              gradio: Not installed
+2023-04-28 19:55:43,806:INFO:             fastapi: Not installed
+2023-04-28 19:55:43,806:INFO:             uvicorn: Not installed
+2023-04-28 19:55:43,806:INFO:              m2cgen: Not installed
+2023-04-28 19:55:43,806:INFO:           evidently: Not installed
+2023-04-28 19:55:43,806:INFO:               fugue: Not installed
+2023-04-28 19:55:43,806:INFO:           streamlit: 1.20.0
+2023-04-28 19:55:43,806:INFO:             prophet: Not installed
+2023-04-28 19:55:43,806:INFO:None
+2023-04-28 19:55:43,806:INFO:Set up data.
+2023-04-28 19:55:44,288:INFO:Set up train/test split.
+2023-04-28 19:55:44,652:INFO:Set up index.
+2023-04-28 19:55:44,657:INFO:Set up folding strategy.
+2023-04-28 19:55:44,657:INFO:Assigning column types.
+2023-04-28 19:55:44,745:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-04-28 19:55:44,792:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-28 19:55:44,796:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-04-28 19:55:44,840:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,045:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,084:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-04-28 19:55:45,094:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-04-28 19:55:45,152:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,160:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,161:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-04-28 19:55:45,231:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-04-28 19:55:45,265:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,269:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,329:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-04-28 19:55:45,370:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,373:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,373:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-04-28 19:55:45,451:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,452:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,535:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:45,538:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:45,543:INFO:Preparing preprocessing pipeline...
+2023-04-28 19:55:45,563:INFO:Set up date feature engineering.
+2023-04-28 19:55:45,564:INFO:Set up simple imputation.
+2023-04-28 19:55:45,723:INFO:Set up encoding of ordinal features.
+2023-04-28 19:55:45,817:INFO:Set up encoding of categorical features.
+2023-04-28 19:55:52,118:INFO:Finished creating preprocessing pipeline.
+2023-04-28 19:55:52,162:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Acer\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pesso...
+                                                               verbose=0))),
+                ('onehot_encoding',
+                 TransformerWrapper(exclude=None,
+                                    include=['tipo_renda', 'educacao',
+                                             'estado_civil',
+                                             'tipo_residencia'],
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              drop_invariant=False,
+                                                              handle_missing='return_nan',
+                                                              handle_unknown='value',
+                                                              return_df=True,
+                                                              use_cat_names=True,
+                                                              verbose=0)))],
+         verbose=False)
+2023-04-28 19:55:52,162:INFO:Creating final display dataframe.
+2023-04-28 19:55:59,200:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target               mau
+2                   Target type            Binary
+3           Original data shape      (750000, 15)
+4        Transformed data shape      (750000, 34)
+5   Transformed train set shape      (525000, 34)
+6    Transformed test set shape      (225000, 34)
+7              Ordinal features                 3
+8              Numeric features                 6
+9                 Date features                 1
+10         Categorical features                 7
+11     Rows with missing values             16.8%
+12                   Preprocess              True
+13              Imputation type            simple
+14           Numeric imputation              mean
+15       Categorical imputation              mode
+16     Maximum one-hot encoding                25
+17              Encoding method              None
+18               Fold Generator   StratifiedKFold
+19                  Fold Number                10
+20                     CPU Jobs                -1
+21                      Use GPU             False
+22               Log Experiment             False
+23              Experiment Name  clf-default-name
+24                          USI              91d5
+2023-04-28 19:55:59,316:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:59,332:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:59,400:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:55:59,400:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:55:59,400:INFO:setup() successfully completed in 15.62s...............
+2023-04-28 19:56:13,800:INFO:gpu_param set to False
+2023-04-28 19:56:13,880:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:56:13,883:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:56:13,945:INFO:Soft dependency imported: xgboost: 1.7.4
+2023-04-28 19:56:13,961:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-04-28 19:57:08,744:INFO:Initializing create_model()
+2023-04-28 19:57:08,744:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-04-28 19:57:08,744:INFO:Checking exceptions
+2023-04-28 19:57:08,773:INFO:Importing libraries
+2023-04-28 19:57:08,773:INFO:Copying training dataset
+2023-04-28 19:57:09,035:INFO:Defining folds
+2023-04-28 19:57:09,035:INFO:Declaring metric variables
+2023-04-28 19:57:09,051:INFO:Importing untrained model
+2023-04-28 19:57:09,051:INFO:Light Gradient Boosting Machine Imported successfully
+2023-04-28 19:57:09,064:INFO:Starting cross validation
+2023-04-28 19:57:09,066:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-28 19:57:31,058:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:32,809:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 1.38s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:37,334:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 4.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:39,737:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:40,507:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:40,830:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:40,998:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:41,041:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.73s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:41,118:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:41,492:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.83s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:41,524:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.77s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:44,641:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 1.23s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:44,999:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:46,365:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 1.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:47,820:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:48,086:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 1.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:48,931:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 2.10s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:49,972:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 1.04s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:51,103:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 19:57:52,618:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.88s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:53,154:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:53,347:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:53,706:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:54,171:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.86s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:57:57,438:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:58:08,094:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 19:58:30,156:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:58:30,176:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 19:58:42,258:INFO:Calculating mean and std
+2023-04-28 19:58:42,265:INFO:Creating metrics dataframe
+2023-04-28 19:58:42,298:INFO:Finalizing model
+2023-04-28 19:58:55,620:INFO:Uploading results into container
+2023-04-28 19:58:55,623:INFO:Uploading model into container now
+2023-04-28 19:58:59,239:INFO:_master_model_container: 1
+2023-04-28 19:58:59,239:INFO:_display_container: 2
+2023-04-28 19:58:59,239:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-04-28 19:58:59,239:INFO:create_model() successfully completed......................................
+2023-04-28 20:03:54,440:INFO:Initializing tune_model()
+2023-04-28 20:03:54,441:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=F1, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>)
+2023-04-28 20:03:54,441:INFO:Checking exceptions
+2023-04-28 20:03:54,670:INFO:Copying training dataset
+2023-04-28 20:03:54,878:INFO:Checking base model
+2023-04-28 20:03:54,879:INFO:Base model : Light Gradient Boosting Machine
+2023-04-28 20:03:54,884:INFO:Declaring metric variables
+2023-04-28 20:03:54,889:INFO:Defining Hyperparameters
+2023-04-28 20:03:55,370:INFO:Tuning with n_jobs=-1
+2023-04-28 20:03:55,370:INFO:Initializing RandomizedSearchCV
+2023-04-28 20:04:15,265:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,332:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,454:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,532:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,646:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,729:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,798:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:15,897:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:04:18,799:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.79s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:04:18,877:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:04:27,965:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:04:28,164:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:04:39,471:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.87s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:05:06,114:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:05:06,732:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:108: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-04-28 20:05:06,733:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:05:07,681:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:05:08,216:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:05:09,752:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:108: UserWarning: Persisting input arguments took 1.08s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2023-04-28 20:05:12,324:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:05:12,339:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.24s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:05:12,371:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 3.27s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:05:13,593:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:05:20,822:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:07:48,416:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:16,389:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:17,595:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:17,960:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:08:18,365:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:19,367:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:24,463:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:08:33,489:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.92s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:08:33,489:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.92s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:08:58,472:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:08:59,633:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 1.15s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:08:59,633:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 1.15s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:09:01,280:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:09:54,403:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:09:56,378:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.61s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:09:58,280:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:09:59,326:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:10:00,077:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:00,425:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.64s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:00,847:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:21,731:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:10:22,994:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:10:23,245:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:24,398:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:24,491:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.60s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:39,200:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:10:40,658:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:10:42,335:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:11:33,687:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-04-28 20:11:35,264:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-04-28 20:11:42,515:INFO:best_params: {'actual_estimator__reg_lambda': 0.0005, 'actual_estimator__reg_alpha': 0.005, 'actual_estimator__num_leaves': 150, 'actual_estimator__n_estimators': 20, 'actual_estimator__min_split_gain': 0.3, 'actual_estimator__min_child_samples': 6, 'actual_estimator__learning_rate': 0.4, 'actual_estimator__feature_fraction': 0.5, 'actual_estimator__bagging_freq': 3, 'actual_estimator__bagging_fraction': 0.9}
+2023-04-28 20:11:42,624:INFO:Hyperparameter search completed
+2023-04-28 20:11:42,640:INFO:SubProcess create_model() called ==================================
+2023-04-28 20:11:42,686:INFO:Initializing create_model()
+2023-04-28 20:11:42,686:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AB3373FD60>, model_only=True, return_train_score=False, kwargs={'reg_lambda': 0.0005, 'reg_alpha': 0.005, 'num_leaves': 150, 'n_estimators': 20, 'min_split_gain': 0.3, 'min_child_samples': 6, 'learning_rate': 0.4, 'feature_fraction': 0.5, 'bagging_freq': 3, 'bagging_fraction': 0.9})
+2023-04-28 20:11:42,686:INFO:Checking exceptions
+2023-04-28 20:11:42,686:INFO:Importing libraries
+2023-04-28 20:11:42,702:INFO:Copying training dataset
+2023-04-28 20:11:43,349:INFO:Defining folds
+2023-04-28 20:11:43,349:INFO:Declaring metric variables
+2023-04-28 20:11:43,421:INFO:Importing untrained model
+2023-04-28 20:11:43,422:INFO:Declaring custom model
+2023-04-28 20:11:43,460:INFO:Light Gradient Boosting Machine Imported successfully
+2023-04-28 20:11:43,472:INFO:Starting cross validation
+2023-04-28 20:11:43,479:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-28 20:12:09,108:INFO:Calculating mean and std
+2023-04-28 20:12:09,108:INFO:Creating metrics dataframe
+2023-04-28 20:12:09,155:INFO:Finalizing model
+2023-04-28 20:12:14,231:INFO:Uploading results into container
+2023-04-28 20:12:14,234:INFO:Uploading model into container now
+2023-04-28 20:12:14,258:INFO:_master_model_container: 2
+2023-04-28 20:12:14,258:INFO:_display_container: 3
+2023-04-28 20:12:14,260:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2023-04-28 20:12:14,261:INFO:create_model() successfully completed......................................
+2023-04-28 20:12:17,700:INFO:SubProcess create_model() end ==================================
+2023-04-28 20:12:17,700:INFO:choose_better activated
+2023-04-28 20:12:17,700:INFO:SubProcess create_model() called ==================================
+2023-04-28 20:12:17,700:INFO:Initializing create_model()
+2023-04-28 20:12:17,700:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-04-28 20:12:17,700:INFO:Checking exceptions
+2023-04-28 20:12:17,718:INFO:Importing libraries
+2023-04-28 20:12:17,718:INFO:Copying training dataset
+2023-04-28 20:12:17,987:INFO:Defining folds
+2023-04-28 20:12:17,987:INFO:Declaring metric variables
+2023-04-28 20:12:17,987:INFO:Importing untrained model
+2023-04-28 20:12:17,987:INFO:Declaring custom model
+2023-04-28 20:12:17,987:INFO:Light Gradient Boosting Machine Imported successfully
+2023-04-28 20:12:17,987:INFO:Starting cross validation
+2023-04-28 20:12:18,002:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-04-28 20:12:34,995:INFO:Calculating mean and std
+2023-04-28 20:12:34,995:INFO:Creating metrics dataframe
+2023-04-28 20:12:34,995:INFO:Finalizing model
+2023-04-28 20:12:37,252:INFO:Uploading results into container
+2023-04-28 20:12:37,252:INFO:Uploading model into container now
+2023-04-28 20:12:37,252:INFO:_master_model_container: 3
+2023-04-28 20:12:37,252:INFO:_display_container: 4
+2023-04-28 20:12:37,252:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-04-28 20:12:37,252:INFO:create_model() successfully completed......................................
+2023-04-28 20:12:37,723:INFO:SubProcess create_model() end ==================================
+2023-04-28 20:12:37,739:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=123, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for F1 is 0.0504
+2023-04-28 20:12:37,739:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0) result for F1 is 0.059
+2023-04-28 20:12:37,739:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0) is best model
+2023-04-28 20:12:37,739:INFO:choose_better completed
+2023-04-28 20:12:37,754:INFO:_master_model_container: 3
+2023-04-28 20:12:37,754:INFO:_display_container: 3
+2023-04-28 20:12:37,754:INFO:LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2023-04-28 20:12:37,754:INFO:tune_model() successfully completed......................................
+2023-04-28 20:12:38,437:INFO:Initializing plot_model()
+2023-04-28 20:12:38,437:INFO:plot_model(plot=auc, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, system=True)
+2023-04-28 20:12:38,437:INFO:Checking exceptions
+2023-04-28 20:12:38,539:INFO:Preloading libraries
+2023-04-28 20:12:38,553:INFO:Copying training dataset
+2023-04-28 20:12:38,554:INFO:Plot type: auc
+2023-04-28 20:12:40,096:INFO:Fitting Model
+2023-04-28 20:12:40,111:INFO:Scoring test/hold-out set
+2023-04-28 20:12:41,241:INFO:Visual Rendered Successfully
+2023-04-28 20:12:41,910:INFO:plot_model() successfully completed......................................
+2023-04-28 20:12:41,936:INFO:Initializing plot_model()
+2023-04-28 20:12:41,937:INFO:plot_model(plot=pr, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, system=True)
+2023-04-28 20:12:41,937:INFO:Checking exceptions
+2023-04-28 20:12:42,114:INFO:Preloading libraries
+2023-04-28 20:12:42,133:INFO:Copying training dataset
+2023-04-28 20:12:42,133:INFO:Plot type: pr
+2023-04-28 20:12:44,230:INFO:Fitting Model
+2023-04-28 20:12:44,262:INFO:Scoring test/hold-out set
+2023-04-28 20:12:45,052:INFO:Visual Rendered Successfully
+2023-04-28 20:12:45,517:INFO:plot_model() successfully completed......................................
+2023-04-28 20:12:45,541:INFO:Initializing plot_model()
+2023-04-28 20:12:45,541:INFO:plot_model(plot=feature, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, system=True)
+2023-04-28 20:12:45,541:INFO:Checking exceptions
+2023-04-28 20:12:45,633:INFO:Preloading libraries
+2023-04-28 20:12:45,653:INFO:Copying training dataset
+2023-04-28 20:12:45,654:INFO:Plot type: feature
+2023-04-28 20:12:45,654:WARNING:No coef_ found. Trying feature_importances_
+2023-04-28 20:12:46,238:INFO:Visual Rendered Successfully
+2023-04-28 20:12:46,680:INFO:plot_model() successfully completed......................................
+2023-04-28 20:12:46,704:INFO:Initializing plot_model()
+2023-04-28 20:12:46,704:INFO:plot_model(plot=confusion_matrix, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, system=True)
+2023-04-28 20:12:46,705:INFO:Checking exceptions
+2023-04-28 20:12:46,813:INFO:Preloading libraries
+2023-04-28 20:12:46,821:INFO:Copying training dataset
+2023-04-28 20:12:46,821:INFO:Plot type: confusion_matrix
+2023-04-28 20:12:47,925:INFO:Fitting Model
+2023-04-28 20:12:47,931:INFO:Scoring test/hold-out set
+2023-04-28 20:12:48,504:INFO:Visual Rendered Successfully
+2023-04-28 20:12:48,982:INFO:plot_model() successfully completed......................................
+2023-04-28 20:12:49,003:INFO:Initializing predict_model()
+2023-04-28 20:12:49,003:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001AB464A0E50>)
+2023-04-28 20:12:49,003:INFO:Checking exceptions
+2023-04-28 20:12:49,003:INFO:Preloading libraries
+2023-04-28 20:12:50,813:INFO:Initializing finalize_model()
+2023-04-28 20:12:50,813:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-04-28 20:12:50,814:INFO:Finalizing LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2023-04-28 20:12:50,869:INFO:Initializing create_model()
+2023-04-28 20:12:50,869:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=LGBMClassifier(bagging_fraction=0.9, bagging_freq=3, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.5,
+               importance_type='split', learning_rate=0.4, max_depth=-1,
+               min_child_samples=6, min_child_weight=0.001, min_split_gain=0.3,
+               n_estimators=20, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=123, reg_alpha=0.005, reg_lambda=0.0005,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, kwargs={})
+2023-04-28 20:12:50,869:INFO:Checking exceptions
+2023-04-28 20:12:50,869:INFO:Importing libraries
+2023-04-28 20:12:50,869:INFO:Copying training dataset
+2023-04-28 20:12:50,885:INFO:Defining folds
+2023-04-28 20:12:50,885:INFO:Declaring metric variables
+2023-04-28 20:12:50,885:INFO:Importing untrained model
+2023-04-28 20:12:50,885:INFO:Declaring custom model
+2023-04-28 20:12:50,885:INFO:Light Gradient Boosting Machine Imported successfully
+2023-04-28 20:12:50,885:INFO:Cross validation set to False
+2023-04-28 20:12:50,885:INFO:Fitting Model
+2023-04-28 20:12:56,043:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-04-28 20:13:00,527:WARNING:C:\Users\Acer\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 2.26s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-04-28 20:13:06,496:INFO:[LightGBM] [Warning] feature_fraction is set=0.5, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.5
+2023-04-28 20:13:06,496:INFO:[LightGBM] [Warning] bagging_fraction is set=0.9, subsample=1.0 will be ignored. Current value: bagging_fraction=0.9
+2023-04-28 20:13:06,496:INFO:[LightGBM] [Warning] bagging_freq is set=3, subsample_freq=0 will be ignored. Current value: bagging_freq=3
+2023-04-28 20:13:09,757:INFO:Pipeline(memory=FastMemory(location=C:\Users\Acer\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pesso...
+                                colsample_bytree=1.0, feature_fraction=0.5,
+                                importance_type='split', learning_rate=0.4,
+                                max_depth=-1, min_child_samples=6,
+                                min_child_weight=0.001, min_split_gain=0.3,
+                                n_estimators=20, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=123,
+                                reg_alpha=0.005, reg_lambda=0.0005,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2023-04-28 20:13:09,757:INFO:create_model() successfully completed......................................
+2023-04-28 20:13:10,232:INFO:_master_model_container: 3
+2023-04-28 20:13:10,232:INFO:_display_container: 4
+2023-04-28 20:13:10,279:INFO:Pipeline(memory=FastMemory(location=C:\Users\Acer\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pesso...
+                                colsample_bytree=1.0, feature_fraction=0.5,
+                                importance_type='split', learning_rate=0.4,
+                                max_depth=-1, min_child_samples=6,
+                                min_child_weight=0.001, min_split_gain=0.3,
+                                n_estimators=20, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=123,
+                                reg_alpha=0.005, reg_lambda=0.0005,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2023-04-28 20:13:10,279:INFO:finalize_model() successfully completed......................................
+2023-04-28 20:13:10,816:INFO:Initializing predict_model()
+2023-04-28 20:13:10,816:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001AB3832A940>, estimator=Pipeline(memory=FastMemory(location=C:\Users\Acer\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pesso...
+                                colsample_bytree=1.0, feature_fraction=0.5,
+                                importance_type='split', learning_rate=0.4,
+                                max_depth=-1, min_child_samples=6,
+                                min_child_weight=0.001, min_split_gain=0.3,
+                                n_estimators=20, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=123,
+                                reg_alpha=0.005, reg_lambda=0.0005,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x000001AB464A0F70>)
+2023-04-28 20:13:10,816:INFO:Checking exceptions
+2023-04-28 20:13:10,816:INFO:Preloading libraries
