@@ -3,7 +3,7 @@
 import pandas            as pd
 import streamlit         as st
 from io                     import BytesIO
-from pycaret.classification import load_model, predict_model
+from pycaret.classification import load_model, predict_model, setup
 
 
 @st.cache_data
@@ -42,7 +42,10 @@ def main():
         df_credit = pd.read_feather(data_file_1)
         df_credit = df_credit.sample(50000)
 
-        model_saved = load_model('model_final')
+         # Configura o ambiente do PyCaret antes de carregar o modelo
+        setup(data=df_credit, target='mau')
+
+        model_saved = load_model('Final GBC Model 28Apr2023')
         predict = predict_model(model_saved, data=df_credit)
 
         df_xlsx = to_excel(predict)
